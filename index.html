@@ -57,6 +57,19 @@
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
+        /* New container for logo image and text */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container img {
+            height: 40px;
+            width: auto;
+            border-radius: 4px;
+        }
+
         .logo {
             font-size: 2rem;
             font-weight: 800;
@@ -503,7 +516,11 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Jin Kim</div>
+        <!-- Updated logo area: new image + "8 Billion Park" -->
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/736x/d8/1e/75/d81e75d4d2f54addb9128a423c413354.jpg" alt="8 Billion Park Logo">
+            <div class="logo">8 Billion Park</div>
+        </div>
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#gaming">Gaming PCs</a>
